@@ -1,0 +1,17 @@
+C:\Users\Axel Portillo\Desktop\.NET\blackclothing\bin\Debug\blackclothing.exe.config
+C:\Users\Axel Portillo\Desktop\.NET\blackclothing\bin\Debug\blackclothing.exe
+C:\Users\Axel Portillo\Desktop\.NET\blackclothing\bin\Debug\blackclothing.pdb
+C:\Users\Axel Portillo\Desktop\.NET\blackclothing\bin\Debug\blackclothing.xml
+C:\Users\Axel Portillo\Desktop\.NET\blackclothing\obj\Debug\blackclothing.vbproj.AssemblyReference.cache
+C:\Users\Axel Portillo\Desktop\.NET\blackclothing\obj\Debug\blackclothing.vbproj.SuggestedBindingRedirects.cache
+C:\Users\Axel Portillo\Desktop\.NET\blackclothing\obj\Debug\blackclothing.agrupacion.resources
+C:\Users\Axel Portillo\Desktop\.NET\blackclothing\obj\Debug\blackclothing.articulos.resources
+C:\Users\Axel Portillo\Desktop\.NET\blackclothing\obj\Debug\blackclothing.blackclothing.resources
+C:\Users\Axel Portillo\Desktop\.NET\blackclothing\obj\Debug\blackclothing.movimientos.resources
+C:\Users\Axel Portillo\Desktop\.NET\blackclothing\obj\Debug\blackclothing.Resources.resources
+C:\Users\Axel Portillo\Desktop\.NET\blackclothing\obj\Debug\blackclothing.tipodemovimiento.resources
+C:\Users\Axel Portillo\Desktop\.NET\blackclothing\obj\Debug\blackclothing.vbproj.GenerateResource.cache
+C:\Users\Axel Portillo\Desktop\.NET\blackclothing\obj\Debug\blackclothing.vbproj.CoreCompileInputs.cache
+C:\Users\Axel Portillo\Desktop\.NET\blackclothing\obj\Debug\blackclothing.exe
+C:\Users\Axel Portillo\Desktop\.NET\blackclothing\obj\Debug\blackclothing.xml
+C:\Users\Axel Portillo\Desktop\.NET\blackclothing\obj\Debug\blackclothing.pdb
