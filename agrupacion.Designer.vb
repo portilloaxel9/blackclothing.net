@@ -30,6 +30,8 @@ Partial Class agrupacion
         Me.btnEliminar = New System.Windows.Forms.Button()
         Me.btnLimpiar = New System.Windows.Forms.Button()
         Me.btnAgregar = New System.Windows.Forms.Button()
+        Me.txtCodigo = New System.Windows.Forms.TextBox()
+        Me.lblCodigo = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'listAgrupaciones
@@ -45,7 +47,7 @@ Partial Class agrupacion
         '
         Me.lblAgrupacion.AutoSize = True
         Me.lblAgrupacion.Font = New System.Drawing.Font("Bahnschrift SemiBold Condensed", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAgrupacion.Location = New System.Drawing.Point(39, 52)
+        Me.lblAgrupacion.Location = New System.Drawing.Point(166, 52)
         Me.lblAgrupacion.Name = "lblAgrupacion"
         Me.lblAgrupacion.Size = New System.Drawing.Size(134, 18)
         Me.lblAgrupacion.TabIndex = 51
@@ -54,10 +56,10 @@ Partial Class agrupacion
         'txtNombreAgrupacion
         '
         Me.txtNombreAgrupacion.BackColor = System.Drawing.Color.White
-        Me.txtNombreAgrupacion.Location = New System.Drawing.Point(42, 80)
+        Me.txtNombreAgrupacion.Location = New System.Drawing.Point(169, 80)
         Me.txtNombreAgrupacion.Margin = New System.Windows.Forms.Padding(93, 10, 23, 10)
         Me.txtNombreAgrupacion.Name = "txtNombreAgrupacion"
-        Me.txtNombreAgrupacion.Size = New System.Drawing.Size(400, 20)
+        Me.txtNombreAgrupacion.Size = New System.Drawing.Size(273, 20)
         Me.txtNombreAgrupacion.TabIndex = 49
         '
         'btnEditar
@@ -104,12 +106,35 @@ Partial Class agrupacion
         Me.btnAgregar.Text = "Agregar"
         Me.btnAgregar.UseVisualStyleBackColor = True
         '
+        'txtCodigo
+        '
+        Me.txtCodigo.Enabled = False
+        Me.txtCodigo.ForeColor = System.Drawing.Color.Black
+        Me.txtCodigo.Location = New System.Drawing.Point(42, 80)
+        Me.txtCodigo.Margin = New System.Windows.Forms.Padding(23, 10, 23, 10)
+        Me.txtCodigo.Name = "txtCodigo"
+        Me.txtCodigo.Size = New System.Drawing.Size(77, 20)
+        Me.txtCodigo.TabIndex = 57
+        Me.txtCodigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'lblCodigo
+        '
+        Me.lblCodigo.AutoSize = True
+        Me.lblCodigo.Font = New System.Drawing.Font("Bahnschrift SemiBold Condensed", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCodigo.Location = New System.Drawing.Point(39, 52)
+        Me.lblCodigo.Name = "lblCodigo"
+        Me.lblCodigo.Size = New System.Drawing.Size(41, 18)
+        Me.lblCodigo.TabIndex = 58
+        Me.lblCodigo.Text = "Código"
+        '
         'agrupacion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.WhiteSmoke
         Me.ClientSize = New System.Drawing.Size(603, 335)
+        Me.Controls.Add(Me.lblCodigo)
+        Me.Controls.Add(Me.txtCodigo)
         Me.Controls.Add(Me.btnEditar)
         Me.Controls.Add(Me.btnEliminar)
         Me.Controls.Add(Me.btnLimpiar)
@@ -131,4 +156,6 @@ Partial Class agrupacion
     Friend WithEvents btnEliminar As Button
     Friend WithEvents btnLimpiar As Button
     Friend WithEvents btnAgregar As Button
+    Friend WithEvents txtCodigo As TextBox
+    Friend WithEvents lblCodigo As Label
 End Class

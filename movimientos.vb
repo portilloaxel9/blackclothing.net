@@ -1,4 +1,5 @@
 ﻿Imports System.Data.SqlClient
+Imports System.Globalization
 
 Public Class movimientos
     Sub MostrarArticulos()
@@ -78,6 +79,7 @@ Public Class movimientos
 
         cmd.ExecuteNonQuery()
         MostrarArticulos()
+        MostrarMovimientos()
         LimpiarCampos(Me)
         Exit Sub
 
@@ -90,10 +92,36 @@ Errores:
         MostrarArticulos()
     End Sub
 
+    Sub MostrarMovimientos()
+        Me.listMovimientos.Items.Clear()
+
+        Dim sql As String = "SELECT m.[fec movimiento], tm.[nom tipomovi], a.[nom articulo], m.[can movimiento] " &
+                        "FROM movimiento m " &
+                        "INNER JOIN tipomovi tm ON m.[id tipomovi] = tm.[id tipomovi] " &
+                        "INNER JOIN articulo a ON m.[id articulo] = a.[id articulo] " &
+                        "ORDER BY m.[fec movimiento] DESC"
+
+        Dim cmd As New SqlCommand(sql, DaoCon)
+        Dim reader As SqlDataReader = cmd.ExecuteReader()
+
+        While reader.Read()
+            Dim fecha As Date = CDate(reader("fec movimiento"))
+            Dim tipoMovimiento As String = reader("nom tipomovi").ToString()
+            Dim producto As String = reader("nom articulo").ToString()
+            Dim cantidad As Integer = CInt(reader("can movimiento"))
+            Dim movimiento As String = fecha.ToString("dd/MM/yyyy") & " - " & tipoMovimiento & " - " & producto & " - " & cantidad.ToString()
+            Me.listMovimientos.Items.Add(movimiento)
+        End While
+
+        reader.Close()
+    End Sub
+
+
     Private Sub movimientos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         txtFecha.Text = ObtenerFecha()
         MostrarArticulos()
         MostrarTipoMovimiento()
+        MostrarMovimientos()
     End Sub
 
     Private Sub movimiento_Closed(sender As Object, e As EventArgs) Handles Me.Closed

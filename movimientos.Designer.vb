@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class movimientos
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class movimientos
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(movimientos))
         Me.lblTipoMovimiento = New System.Windows.Forms.Label()
@@ -37,12 +37,14 @@ Partial Class movimientos
         Me.txtFecha = New System.Windows.Forms.TextBox()
         Me.btnLimpiar = New System.Windows.Forms.Button()
         Me.btnAgregar = New System.Windows.Forms.Button()
+        Me.listMovimientos = New System.Windows.Forms.ListBox()
+        Me.lblHistorial = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lblTipoMovimiento
         '
         Me.lblTipoMovimiento.AutoSize = True
-        Me.lblTipoMovimiento.Location = New System.Drawing.Point(81, 337)
+        Me.lblTipoMovimiento.Location = New System.Drawing.Point(81, 223)
         Me.lblTipoMovimiento.Name = "lblTipoMovimiento"
         Me.lblTipoMovimiento.Size = New System.Drawing.Size(64, 26)
         Me.lblTipoMovimiento.TabIndex = 27
@@ -101,7 +103,7 @@ Partial Class movimientos
         '
         Me.cboxTipoMovimiento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboxTipoMovimiento.FormattingEnabled = True
-        Me.cboxTipoMovimiento.Location = New System.Drawing.Point(178, 342)
+        Me.cboxTipoMovimiento.Location = New System.Drawing.Point(178, 228)
         Me.cboxTipoMovimiento.Margin = New System.Windows.Forms.Padding(13, 30, 23, 10)
         Me.cboxTipoMovimiento.Name = "cboxTipoMovimiento"
         Me.cboxTipoMovimiento.Size = New System.Drawing.Size(298, 21)
@@ -114,7 +116,7 @@ Partial Class movimientos
         Me.txtObservacion.Margin = New System.Windows.Forms.Padding(13, 30, 23, 10)
         Me.txtObservacion.Multiline = True
         Me.txtObservacion.Name = "txtObservacion"
-        Me.txtObservacion.Size = New System.Drawing.Size(444, 172)
+        Me.txtObservacion.Size = New System.Drawing.Size(444, 58)
         Me.txtObservacion.TabIndex = 18
         '
         'cboxArticulo
@@ -182,12 +184,32 @@ Partial Class movimientos
         Me.btnAgregar.Text = "Agregar"
         Me.btnAgregar.UseVisualStyleBackColor = True
         '
+        'listMovimientos
+        '
+        Me.listMovimientos.FormattingEnabled = True
+        Me.listMovimientos.Location = New System.Drawing.Point(178, 304)
+        Me.listMovimientos.Name = "listMovimientos"
+        Me.listMovimientos.Size = New System.Drawing.Size(444, 134)
+        Me.listMovimientos.TabIndex = 42
+        '
+        'lblHistorial
+        '
+        Me.lblHistorial.AutoSize = True
+        Me.lblHistorial.Font = New System.Drawing.Font("Bahnschrift SemiBold Condensed", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHistorial.Location = New System.Drawing.Point(175, 283)
+        Me.lblHistorial.Name = "lblHistorial"
+        Me.lblHistorial.Size = New System.Drawing.Size(133, 18)
+        Me.lblHistorial.TabIndex = 43
+        Me.lblHistorial.Text = "Historial de movimientos:"
+        '
         'movimientos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(822, 450)
+        Me.Controls.Add(Me.lblHistorial)
+        Me.Controls.Add(Me.listMovimientos)
         Me.Controls.Add(Me.btnLimpiar)
         Me.Controls.Add(Me.btnAgregar)
         Me.Controls.Add(Me.lblTipoMovimiento)
@@ -225,4 +247,6 @@ Partial Class movimientos
     Friend WithEvents txtFecha As TextBox
     Friend WithEvents btnLimpiar As Button
     Friend WithEvents btnAgregar As Button
+    Friend WithEvents listMovimientos As ListBox
+    Friend WithEvents lblHistorial As Label
 End Class

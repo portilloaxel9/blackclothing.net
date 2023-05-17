@@ -32,13 +32,15 @@ Partial Class tipodemovimiento
         Me.btnEliminar = New System.Windows.Forms.Button()
         Me.btnLimpiar = New System.Windows.Forms.Button()
         Me.btnAgregar = New System.Windows.Forms.Button()
+        Me.txtCodigo = New System.Windows.Forms.TextBox()
+        Me.lblCodigo = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'listTipoMovimiento
         '
         Me.listTipoMovimiento.BackColor = System.Drawing.Color.White
         Me.listTipoMovimiento.FormattingEnabled = True
-        Me.listTipoMovimiento.Location = New System.Drawing.Point(37, 118)
+        Me.listTipoMovimiento.Location = New System.Drawing.Point(149, 118)
         Me.listTipoMovimiento.Name = "listTipoMovimiento"
         Me.listTipoMovimiento.Size = New System.Drawing.Size(465, 173)
         Me.listTipoMovimiento.TabIndex = 39
@@ -48,7 +50,7 @@ Partial Class tipodemovimiento
         Me.cboxTipoMovimiento.BackColor = System.Drawing.Color.White
         Me.cboxTipoMovimiento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboxTipoMovimiento.FormattingEnabled = True
-        Me.cboxTipoMovimiento.Location = New System.Drawing.Point(381, 85)
+        Me.cboxTipoMovimiento.Location = New System.Drawing.Point(493, 85)
         Me.cboxTipoMovimiento.Name = "cboxTipoMovimiento"
         Me.cboxTipoMovimiento.Size = New System.Drawing.Size(121, 21)
         Me.cboxTipoMovimiento.TabIndex = 38
@@ -57,7 +59,7 @@ Partial Class tipodemovimiento
         '
         Me.lblNombreMovimiento.AutoSize = True
         Me.lblNombreMovimiento.Font = New System.Drawing.Font("Bahnschrift SemiBold Condensed", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNombreMovimiento.Location = New System.Drawing.Point(34, 62)
+        Me.lblNombreMovimiento.Location = New System.Drawing.Point(146, 57)
         Me.lblNombreMovimiento.Name = "lblNombreMovimiento"
         Me.lblNombreMovimiento.Size = New System.Drawing.Size(125, 18)
         Me.lblNombreMovimiento.TabIndex = 36
@@ -67,7 +69,7 @@ Partial Class tipodemovimiento
         '
         Me.lblTipoMovimiento.AutoSize = True
         Me.lblTipoMovimiento.Font = New System.Drawing.Font("Bahnschrift SemiBold Condensed", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTipoMovimiento.Location = New System.Drawing.Point(378, 62)
+        Me.lblTipoMovimiento.Location = New System.Drawing.Point(490, 57)
         Me.lblTipoMovimiento.Name = "lblTipoMovimiento"
         Me.lblTipoMovimiento.Size = New System.Drawing.Size(103, 18)
         Me.lblTipoMovimiento.TabIndex = 35
@@ -76,16 +78,16 @@ Partial Class tipodemovimiento
         'txtNombreMovimiento
         '
         Me.txtNombreMovimiento.BackColor = System.Drawing.Color.White
-        Me.txtNombreMovimiento.Location = New System.Drawing.Point(37, 85)
+        Me.txtNombreMovimiento.Location = New System.Drawing.Point(149, 85)
         Me.txtNombreMovimiento.Margin = New System.Windows.Forms.Padding(23, 10, 23, 10)
         Me.txtNombreMovimiento.Name = "txtNombreMovimiento"
-        Me.txtNombreMovimiento.Size = New System.Drawing.Size(298, 20)
+        Me.txtNombreMovimiento.Size = New System.Drawing.Size(318, 20)
         Me.txtNombreMovimiento.TabIndex = 34
         '
         'btnEditar
         '
         Me.btnEditar.Font = New System.Drawing.Font("Bahnschrift SemiBold Condensed", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEditar.Location = New System.Drawing.Point(528, 137)
+        Me.btnEditar.Location = New System.Drawing.Point(640, 137)
         Me.btnEditar.Margin = New System.Windows.Forms.Padding(23, 10, 23, 10)
         Me.btnEditar.Name = "btnEditar"
         Me.btnEditar.Size = New System.Drawing.Size(100, 32)
@@ -96,7 +98,7 @@ Partial Class tipodemovimiento
         'btnEliminar
         '
         Me.btnEliminar.Font = New System.Drawing.Font("Bahnschrift SemiBold Condensed", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEliminar.Location = New System.Drawing.Point(528, 187)
+        Me.btnEliminar.Location = New System.Drawing.Point(640, 187)
         Me.btnEliminar.Margin = New System.Windows.Forms.Padding(23, 10, 23, 10)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(100, 32)
@@ -107,7 +109,7 @@ Partial Class tipodemovimiento
         'btnLimpiar
         '
         Me.btnLimpiar.Font = New System.Drawing.Font("Bahnschrift SemiBold Condensed", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLimpiar.Location = New System.Drawing.Point(528, 239)
+        Me.btnLimpiar.Location = New System.Drawing.Point(640, 239)
         Me.btnLimpiar.Margin = New System.Windows.Forms.Padding(23, 10, 23, 10)
         Me.btnLimpiar.Name = "btnLimpiar"
         Me.btnLimpiar.Size = New System.Drawing.Size(100, 32)
@@ -118,7 +120,7 @@ Partial Class tipodemovimiento
         'btnAgregar
         '
         Me.btnAgregar.Font = New System.Drawing.Font("Bahnschrift SemiBold Condensed", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAgregar.Location = New System.Drawing.Point(528, 85)
+        Me.btnAgregar.Location = New System.Drawing.Point(640, 85)
         Me.btnAgregar.Margin = New System.Windows.Forms.Padding(23, 10, 23, 10)
         Me.btnAgregar.Name = "btnAgregar"
         Me.btnAgregar.Size = New System.Drawing.Size(100, 32)
@@ -126,12 +128,35 @@ Partial Class tipodemovimiento
         Me.btnAgregar.Text = "Agregar"
         Me.btnAgregar.UseVisualStyleBackColor = True
         '
+        'txtCodigo
+        '
+        Me.txtCodigo.Enabled = False
+        Me.txtCodigo.ForeColor = System.Drawing.Color.Black
+        Me.txtCodigo.Location = New System.Drawing.Point(26, 85)
+        Me.txtCodigo.Margin = New System.Windows.Forms.Padding(23, 10, 23, 10)
+        Me.txtCodigo.Name = "txtCodigo"
+        Me.txtCodigo.Size = New System.Drawing.Size(77, 20)
+        Me.txtCodigo.TabIndex = 49
+        Me.txtCodigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'lblCodigo
+        '
+        Me.lblCodigo.AutoSize = True
+        Me.lblCodigo.Font = New System.Drawing.Font("Bahnschrift SemiBold Condensed", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCodigo.Location = New System.Drawing.Point(23, 57)
+        Me.lblCodigo.Name = "lblCodigo"
+        Me.lblCodigo.Size = New System.Drawing.Size(41, 18)
+        Me.lblCodigo.TabIndex = 50
+        Me.lblCodigo.Text = "Código"
+        '
         'tipodemovimiento
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.ClientSize = New System.Drawing.Size(657, 346)
+        Me.ClientSize = New System.Drawing.Size(816, 346)
+        Me.Controls.Add(Me.lblCodigo)
+        Me.Controls.Add(Me.txtCodigo)
         Me.Controls.Add(Me.btnEditar)
         Me.Controls.Add(Me.btnEliminar)
         Me.Controls.Add(Me.btnLimpiar)
@@ -157,4 +182,6 @@ Partial Class tipodemovimiento
     Friend WithEvents btnEliminar As Button
     Friend WithEvents btnLimpiar As Button
     Friend WithEvents btnAgregar As Button
+    Friend WithEvents txtCodigo As TextBox
+    Friend WithEvents lblCodigo As Label
 End Class
